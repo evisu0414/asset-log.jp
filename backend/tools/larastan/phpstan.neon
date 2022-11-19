@@ -1,0 +1,13 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+parameters:
+    level: 5
+    paths:
+        - ../../app/
+        - ../../database/
+        - ../../tests/
+    excludePaths:
+        - ../../app/Http/Resources/
+    ignoreErrors:
+        - '#Cannot access property#'
+        - '#Call to an undefined method#'

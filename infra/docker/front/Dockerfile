@@ -1,0 +1,9 @@
+FROM node:16.17-buster
+
+ENV HOST 0.0.0.0
+ENV PORT 3000
+ENV PROJECT_ROOTDIR /var/www/assets-log
+
+WORKDIR $PROJECT_ROOTDIR
+
+RUN apt-get update
